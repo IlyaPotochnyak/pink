@@ -1,0 +1,39 @@
+[33mcommit 5bc1f708b9eb4415258505aca46b0332b5f15dc9[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: c51bc1f a73f5d6
+Author: Eugene <fedyai.eugen@gmail.com>
+Date:   Tue May 16 10:18:14 2017 +0300
+
+    Merge remote-tracking branch 'upstream/master'
+
+[33mcommit a73f5d6bb61692c4994bade54ed7e77ce5277f09[m[33m ([m[1;31mupstream/master[m[33m)[m
+Merge: 7a5e293 8c9f677
+Author: IlyaPotochnyak <iluha.diego@gmail.com>
+Date:   Mon May 15 17:53:33 2017 +0300
+
+    Merge pull request #1 from Ledvis/module1-task1
+    
+    Реальный рабочий процесс
+
+[33mcommit c51bc1f47a85fe022014baa94c1ff43ce93d227d[m
+Author: Eugene <fedyai.eugen@gmail.com>
+Date:   Mon May 15 17:46:32 2017 +0300
+
+    Еще раз поменял наставника
+
+[33mcommit 8c9f67757fc588845c462770fccde604d53f246b[m[33m ([m[1;31morigin/module1-task1[m[33m, [m[1;32mmodule1-task1[m[33m)[m
+Author: Eugene <fedyai.eugen@gmail.com>
+Date:   Mon May 15 17:40:09 2017 +0300
+
+    Поменял наставника
+
+[33mcommit ff3477faf0c15d7c9bc0260aef3871d7e5637645[m
+Author: Eugene <fedyai.eugen@gmail.com>
+Date:   Mon May 15 17:35:15 2017 +0300
+
+    first commit
+
+[33mcommit 7a5e293e64e4c03843c9293462e5bf519a1fc4e7[m
+Author: IlyaPotochnyak <iluha.diego@gmail.com>
+Date:   Mon May 15 17:19:52 2017 +0300
+
+    Create README.md
