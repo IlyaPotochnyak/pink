@@ -1,0 +1,22 @@
+@mixin clearfix() {
+	&::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+@mixin container() {
+	width: 320px;
+	margin: 0 auto;
+	@media #{$tablet-width} {
+		width: 640px;
+	}
+	@media #{$desktop-width} {
+		width: 960px;
+	}
+}
+
+@mixin border-box() {
+	box-sizing: border-box;
+}

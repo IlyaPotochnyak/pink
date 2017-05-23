@@ -1,0 +1,48 @@
+.stats {
+	@include container();
+}
+
+.stats__header {
+	@include border-box();
+	min-height: 130px;
+	padding: 30px 38px;
+	background-color: forestgreen;
+}
+
+.stats__table {
+	width: 100%;
+	height: 320px;
+	background-color: firebrick;
+}
+
+@media #{$tablet-width} {
+	.stats {
+		position: relative;
+		z-index: 1;
+		margin-top: -184px;
+	}
+	.stats__header {
+		@include clearfix();
+		padding: 36px 82px 31px 40px;
+	}
+	.stats__table {
+		@include clearfix();
+		display: block;
+	}
+}
+
+@media #{$desktop-width} {
+	.stats {
+		@include clearfix();
+		margin-top: -159px;
+	}
+	.stats__header {
+		float: left;
+		width: 320px;
+		padding: 36px 60px 31px 40px;
+	}
+	.stats__table {
+		float: right;
+		width: 640px;
+	}
+}
