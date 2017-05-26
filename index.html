@@ -3,24 +3,62 @@
 
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Барбершоп "Бородинский"</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 	<header class="page-header">
-		<div class="page-header__logo"></div>
-		<nav class="main-nav">
+		<h1 class="visually-hidden">Барбершоп &laquo;Бородинский&raquo; &mdash; истино мужская классика</h1>
+		<div class="page-header__logo">
+			<img src="img/logo-mobile.png" alt="Барбершоп &laquo;Бородинский&raquo;" width="226" height="30">
+		</div>
+		<nav class="main-nav  main-nav--closed  main-nav--nojs">
+			<button class="main-nav__toggle">Открыть меню</button>
 			<div class="main-nav__wrapper">
-				<ul class="main-nav__list"></ul>
-				<ul class="main-nav__user-list"></ul>
+				<ul class="main-nav__list">
+					<li class="main-nav__list-item  main-nav__list-item--active"><a>Главная</a></li>
+					<li class="main-nav__list-item"><a href="#">Наши работы</a></li>
+					<li class="main-nav__list-item"><a href="#">Записаться</a></li>
+					<li class="main-nav__list-item"><a href="#">Контакты</a></li>
+					<li class="main-nav__list-item"><a href="#">HTML Academy</a></li>
+				</ul>
+				<ul class="main-nav__user-list">
+					<li class="main-nav__user-item"><a class="main-nav__user-login" href="#" title="Войти">Вход</a></li>
+				</ul>
 			</div>
 		</nav>
 	</header>
+	
 	<section class="stats">
-		<header class="stats__header"></header>
-		<table class="stats__table"></table>
+		<header class="stats__header">
+			<h2 class="visually-hidden">Статистика Барбершопа</h2>
+			<p class="stats__slogan">Стрижка у нас это выгодно!</p>
+			<b class="stats__intro">Мужская стрижка требует точного подхода. Обратимся к статистике:</b>
+			<small class="stats__legend stats__legend--top"><sup>*</sup> &mdash; приведенные данные ложь</small>
+		</header>
+		<table class="stats__table">
+			<tr>
+				<td class="stats__value">1&nbsp;500<sup>*</sup></td>
+				<td class="stats__field">Рублей вложений</td>
+			</tr>
+			<tr>
+				<td class="stats__value">7&nbsp;200</td>
+				<td class="stats__field">секунд времени мастера</td>
+			</tr>
+			<tr>
+				<td class="stats__value">90&nbsp;000</td>
+				<td class="stats__field">Постриженных волос</td>
+			</tr>
+			<tr>
+				<td class="stats__value">500&nbsp;000<sup>*</sup></td>
+				<td class="stats__field">Лайков и комплиментов</td>
+			</tr>
+		</table>
+		<small class="stats__legend stats__legend--bottom"><sup>*</sup> &mdash; приведенные данные ложь</small>
 	</section>
+<!--
 	<section class="advantages">
 		<div class="advantages__wrapper">
 			<ul class="advantages__list">
@@ -77,7 +115,9 @@
 			</p>
 		</div>
 	</footer>
+-->
+
+<script src="script/script.js"></script>
 </body>
 
 </html>
-	
