@@ -1,0 +1,154 @@
+.stats {
+	@include container();
+}
+
+.stats__header {
+	padding: 20px 30px;
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+}
+
+.stats__slogan {
+	display: block;
+	margin: 0;
+	margin-bottom: 16px;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 30px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.stats__intro {
+	display: block;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 27px;
+	text-align: center;
+}
+
+.stats__legend {
+	display: block;
+	line-height: 27px;
+	text-align: center;
+	&--top {
+		display: none;
+	}
+	&--bottom {
+		padding: 15px 0;
+		color: rgba(255, 255, 255, 0.3);
+	}
+}
+
+.stats__table {
+	width: 100%;
+	border-collapse: collapse;
+	tr {
+		background-color: rgb(64, 64, 64);
+		&:nth-child(2) {
+			background-color: rgb(78, 78, 78);
+		}
+		&:nth-child(3) {
+			background-color: rgb(53, 53, 53);
+		}
+	}
+}
+
+.stats__value,
+.stats__field {
+	width: 50%;
+	padding: 15px;
+}
+
+.stats__value {
+	padding-right: 0;
+	font-size: 40px;
+	font-weight: 700;
+	sup {
+		font-size: 50%;
+	}
+}
+
+.stats__field {
+	padding-left: 0;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 18px;
+	text-align: right;
+	text-transform: lowercase;
+}
+
+@media #{$tablet-width} {
+	.stats {
+		position: relative;
+		z-index: 1;
+		margin-top: -184px;
+	}
+	.stats__header {
+		@include clearfix();
+		@include border-box();
+		min-height: 184px;
+		padding: 0 40px;
+		padding-top: 40px;
+		padding-bottom: 24px;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 27px;
+			left: -14px;
+			border: 15px solid transparent;
+			border-bottom-color: rgb(255, 255, 255);
+			transform: rotate(45deg);
+		}
+	}
+	.stats__slogan {
+		@include border-box();
+		float: left;
+		width: 50%;
+		margin: 0;
+		padding: 0 10px;
+		text-align: left;
+		text-transform: none;
+	}
+	.stats__intro {
+		@include border-box();
+		float: right;
+		width: 50%;
+		padding: 0 10px;
+		text-align: left;
+	}
+	.stats__legend--top {
+		float: left;
+		clear: left;
+		display: block;
+		padding: 0 10px;
+		color: rgba(0, 0, 0, 0.3);
+	}
+	.stats__legend--bottom {
+		display: none;
+	}
+	.stats__table {
+		@include clearfix();
+		display: table;
+		tr {
+			@include border-box();
+			float: left;
+			display: block;
+			width: 50%;
+			padding: 25px 35px;
+		}
+	}
+	.stats__value,
+	.stats__field {
+		display: block;
+		width: auto;
+		padding: 0;
+		text-align: left;
+	}
+	.stats__value {
+		font-size: 72px;
+	}
+	.stats__field {
+		
+	}
+}

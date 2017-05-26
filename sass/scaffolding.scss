@@ -1,0 +1,40 @@
+@import "variables";
+@font-face {
+	font-family: "PT Sans Narrow";
+	font-weight: normal;
+	font-style: normal;
+	src: url("../fonts/ptsansnarrow_regular.woff") format("woff");
+}
+
+@font-face {
+	font-family: "PT Sans Narrow";
+	font-weight: bold;
+	font-style: normal;
+	src: url("../fonts/ptsansnarrow_bold.woff") format("woff");
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #f7f4f1;
+	font-family: "Arial", sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	background-color: $bg-darkgrey;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+	clip: rect(0, 0, 0, 0);
+	overflow: hidden;
+}
