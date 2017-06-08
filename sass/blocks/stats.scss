@@ -1,5 +1,6 @@
 .stats {
-	@include container();
+	@include container-fluid();
+	margin-bottom: 10px;
 }
 
 .stats__header {
@@ -56,6 +57,8 @@
 
 .stats__value,
 .stats__field {
+	@include border-box();
+	display: inline-block;
 	width: 50%;
 	padding: 15px;
 }
@@ -83,10 +86,16 @@
 		position: relative;
 		z-index: 1;
 		margin-top: -184px;
+		margin-bottom: 30px;
 	}
 	.stats__header {
-		@include clearfix();
 		@include border-box();
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-wrap: wrap;
 		min-height: 184px;
 		padding: 0 40px;
 		padding-top: 40px;
@@ -103,39 +112,40 @@
 	}
 	.stats__slogan {
 		@include border-box();
-		float: left;
 		width: 50%;
 		margin: 0;
-		padding: 0 10px;
+		padding-right: 60px;
 		text-align: left;
 		text-transform: none;
 	}
 	.stats__intro {
 		@include border-box();
-		float: right;
 		width: 50%;
-		padding: 0 10px;
+		padding-right: 30px;
 		text-align: left;
 	}
 	.stats__legend--top {
-		float: left;
-		clear: left;
 		display: block;
-		padding: 0 10px;
 		color: rgba(0, 0, 0, 0.3);
 	}
 	.stats__legend--bottom {
 		display: none;
 	}
 	.stats__table {
-		@include clearfix();
-		display: table;
+		display: block;
+		tbody {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			flex-wrap: wrap;
+		}
 		tr {
 			@include border-box();
-			float: left;
 			display: block;
 			width: 50%;
-			padding: 25px 35px;
+			padding: 29px 35px;
 		}
 	}
 	.stats__value,
@@ -148,7 +158,41 @@
 	.stats__value {
 		font-size: 72px;
 	}
-	.stats__field {
-		
+}
+
+@media #{$desktop-width} {
+	.stats {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		margin-top: -159px;
+	}
+	.stats__header {
+		flex-direction: column;
+		justify-content: space-between;
+		flex-grow: 1;
+		width: 320px;
+		min-height: 318px;
+		&::before {
+			top: 22px;
+		}
+	}
+	.stats__slogan,
+	.stats__intro,
+	.stats__legend--top {
+		width: auto;
+		margin: 0;
+		padding: 0;
+	}
+	.stats__table {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-grow: 1;
+		width: 640px;
 	}
 }

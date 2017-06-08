@@ -1,0 +1,123 @@
+.price {
+	@include container-fluid();
+}
+
+.price__header {
+	margin: 0;
+	margin-bottom: 15px;
+	font-size: 30px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.price__table {
+	display: block;
+	margin-bottom: 30px;
+	font-size: 20px;
+	line-height: 27px;
+	tbody {
+		display: block;
+	}
+	tr {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: 20px 0;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	}
+	td {
+		display: block;
+		padding: 0 15px;
+	}
+}
+
+td.price__col-1 {
+	display: none;
+}
+
+.price__col-2 {
+	font-weight: 700;
+}
+
+.price__col-3 {
+	order: 4;
+	width: 100%;
+	text-transform: lowercase;
+}
+
+.price__discount {
+	position: relative;
+	padding: 30px;
+	padding-left: 110px;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 20px;
+	text-align: center;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 10px;
+		left: 10%;
+		width: 64px;
+		height: 64px;
+		background: url("../../img/clock.svg") no-repeat;
+	}
+}
+
+@media #{$tablet-width} {
+	.price__flex-columns {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		align-items: flex-start;
+	}
+	.price__table {
+		display: table;
+		width: 70%;
+		border-collapse: collapse;
+		tbody {
+			display: table-row-group;
+		}
+		tr {
+			display: table-row;
+		}
+		td {
+			display: table-cell;
+			padding: 10px;
+		}
+	}
+	.price__col-1 {
+		display: table-cell;
+		width: 10%;
+		padding: 0;
+		color: rgba(255, 255, 255, 0.5);
+		text-align: center;
+	}
+	.price__col-3 {
+		width: auto;
+	}
+	.price__discount {
+		width: 30%;
+		margin: 0;
+		padding: 0 15px;
+		padding-top: 200px;
+		text-align: center;
+		text-transform: uppercase;
+		border: none;
+		&::before {
+			top: 0;
+			left: 50%;
+			width: 150px;
+			height: 150px;
+			transform: translateX(-50%);
+		}
+	}
+}
+
+
