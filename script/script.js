@@ -1,6 +1,6 @@
 var navMain = document.querySelector(".main-nav");
 var navToggle = document.querySelector(".main-nav__toggle");
-var login = document.querySelector(".main-nav__user-login");
+var write = document.querySelector(".page-footer__write");
 var popup = document.querySelector(".popup");
 var closePopup = popup.querySelector(".popup__close");
 
@@ -16,7 +16,7 @@ navToggle.addEventListener("click", function () {
 	}
 });
 
-login.addEventListener("click", function (event) {
+write.addEventListener("click", function (event) {
 	event.preventDefault();
 	if (popup.classList.contains("popup--show")) {
 		popup.classList.remove("popup--show");
@@ -36,4 +36,4 @@ window.addEventListener("keydown", function(event) {
 			popup.classList.remove("popup--show");
 		}
 	}
-})
+});

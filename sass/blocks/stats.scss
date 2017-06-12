@@ -1,6 +1,9 @@
 .stats {
+	background-color: $bg-darkgrey;
+}
+
+.stats__wrapper {
 	@include container-fluid();
-	margin-bottom: 10px;
 }
 
 .stats__header {
@@ -82,11 +85,10 @@
 }
 
 @media #{$tablet-width} {
-	.stats {
+	.stats__wrapper {
 		position: relative;
 		z-index: 1;
 		margin-top: -184px;
-		margin-bottom: 30px;
 	}
 	.stats__header {
 		@include border-box();
@@ -161,7 +163,7 @@
 }
 
 @media #{$desktop-width} {
-	.stats {
+	.stats__wrapper {
 		display: -webkit-flex;
 		display: -moz-flex;
 		display: -ms-flex;
