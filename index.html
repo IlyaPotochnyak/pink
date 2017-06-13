@@ -12,22 +12,22 @@
 <body>
 	<header class="page-header">
 		<h1 class="visually-hidden">Барбершоп &laquo;Бородинский&raquo; &mdash; истино мужская классика</h1>
-		<div class="page-header__logo">
+		<a class="page-header__logo">
 			<picture>
 				<source media="(min-width: 1200px)" srcset="img/logo-desktop.png">
 				<source media="(min-width: 768px)" srcset="img/logo-tablet.png">
 				<img src="img/logo-mobile.png" alt="">
 			</picture>
-		</div>
+		</a>
 		<nav class="main-nav  main-nav--closed  main-nav--nojs">
 			<button class="main-nav__toggle">Открыть меню</button>
 			<div class="main-nav__wrapper">
 				<ul class="main-nav__list">
 					<li class="main-nav__list-item  main-nav__list-item--active"><a>Главная</a></li>
-					<li class="main-nav__list-item"><a href="#">Наши работы</a></li>
+					<li class="main-nav__list-item"><a href="photo.html">Наши работы</a></li>
+					<li class="main-nav__list-item"><a href="#">Прайс</a></li>
 					<li class="main-nav__list-item"><a href="#">Записаться</a></li>
 					<li class="main-nav__list-item"><a href="#">Контакты</a></li>
-					<li class="main-nav__list-item"><a href="#">HTML Academy</a></li>
 				</ul>
 				<ul class="main-nav__user-list">
 					<li class="main-nav__user-item"><a class="main-nav__user-login" href="#" title="Войти">Вход</a></li>
@@ -36,77 +36,41 @@
 		</nav>
 	</header>
 	<section class="stats">
-		<header class="stats__header">
-			<h1 class="visually-hidden">Статистика Барбершопа</h1>
-			<p class="stats__slogan">Стрижка у нас это выгодно!</p>
-			<b class="stats__intro">Мужская стрижка требует точного подхода. Обратимся к статистике:</b>
-			<small class="stats__legend stats__legend--top"><sup>*</sup> &mdash; приведенные данные ложь</small>
-		</header>
-		<table class="stats__table">
-			<tr>
-				<td class="stats__value">1&nbsp;500<sup>*</sup></td>
-				<td class="stats__field">Рублей вложений</td>
-			</tr>
-			<tr>
-				<td class="stats__value">7&nbsp;200</td>
-				<td class="stats__field">секунд времени мастера</td>
-			</tr>
-			<tr>
-				<td class="stats__value">90&nbsp;000</td>
-				<td class="stats__field">Постриженных волос</td>
-			</tr>
-			<tr>
-				<td class="stats__value">500&nbsp;000<sup>*</sup></td>
-				<td class="stats__field">Лайков и комплиментов</td>
-			</tr>
-		</table>
-		<small class="stats__legend stats__legend--bottom"><sup>*</sup> &mdash; приведенные данные ложь</small>
-	</section>
-	<section class="price">
-		<h1 class="price__header">Прайскурант</h1>
-		<div class="price__flex-columns">
-			<table class="price__table">
+		<div class="stats__wrapper">
+			<header class="stats__header">
+				<h1 class="visually-hidden">Статистика Барбершопа</h1>
+				<p class="stats__slogan">Стрижка у нас это выгодно!</p>
+				<b class="stats__intro">Мужская стрижка требует точного подхода. Обратимся к статистике:</b>
+				<small class="stats__legend stats__legend--top"><sup>*</sup> &mdash; приведенные данные ложь</small>
+			</header>
+			<table class="stats__table">
 				<tr>
-					<td class="price__col-1">1</td>
-					<td class="price__col-2">Классическая стрижка</td>
-					<td class="price__col-3">(С мытьем головы)</td>
-					<td class="price__col-4">1&nbsp;500 &#8381;</td>
+					<td class="stats__value">1&nbsp;500<sup>*</sup></td>
+					<td class="stats__field">Рублей вложений</td>
 				</tr>
 				<tr>
-					<td class="price__col-1">2</td>
-					<td class="price__col-2">Современный вариант</td>
-					<td class="price__col-3">(С мытьем головы)</td>
-					<td class="price__col-4">1&nbsp;500 &#8381;</td>
+					<td class="stats__value">7&nbsp;200</td>
+					<td class="stats__field">секунд времени мастера</td>
 				</tr>
 				<tr>
-					<td class="price__col-1">2</td>
-					<td class="price__col-2">Индивидуальный подход</td>
-					<td class="price__col-3">(С мытьем головы)</td>
-					<td class="price__col-4">2&nbsp;000 &#8381;</td>
+					<td class="stats__value">90&nbsp;000</td>
+					<td class="stats__field">Постриженных волос</td>
 				</tr>
 				<tr>
-					<td class="price__col-1">3</td>
-					<td class="price__col-2">Бритьё бороды</td>
-					<td class="price__col-3">(без мытья)</td>
-					<td class="price__col-4">500 &#8381;</td>
-				</tr>
-				<tr>
-					<td class="price__col-1">4</td>
-					<td class="price__col-2">Бритьё головы</td>
-					<td class="price__col-3">(С мытьем головы)</td>
-					<td class="price__col-4">1&nbsp;000 &#8381;</td>
+					<td class="stats__value">500&nbsp;000<sup>*</sup></td>
+					<td class="stats__field">Лайков и комплиментов</td>
 				</tr>
 			</table>
-			<p class="price__discount">С 10:00 до 14:00 скидка <b>20%</b></p>
+			<small class="stats__legend stats__legend--bottom"><sup>*</sup> &mdash; приведенные данные ложь</small>
 		</div>
 	</section>
 	<section class="advantages">
 		<h1 class="visually-hidden">Преймущества Барбершопа</h1>
-		<div class="advantages__wrapper">
+		<div class="advantages__wrapper  slider">
 			<input class="slider__input  slider__input--1" type="radio" id="advantages-input-1" name="advantages" checked>
 			<input class="slider__input  slider__input--2" type="radio" id="advantages-input-2" name="advantages">
 			<input class="slider__input  slider__input--3" type="radio" id="advantages-input-3" name="advantages">
-			<ul class="advantages__list  slider">
+			<ul class="advantages__list  slider__slide">
 				<li class="advantages__item  advantages__item--fast  slider__item">
 					<h2 class="advantages__title">Быстро</h2>
 					<p class="advantages__descr">Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы &mdash; счастливый обладатель стильной стрижки-минутки</p>
@@ -120,7 +84,7 @@
 					<p class="advantages__descr">Наши мастера &mdash; профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не даёт определенный статус?</p>
 				</li>
 			</ul>
-			<div class="advatages__toggle-list  slider__toggle-list">
+			<div class="slider__toggle-list">
 				<label class="slider__toggle" for="advantages-input-1"></label>
 				<label class="slider__toggle" for="advantages-input-2"></label>
 				<label class="slider__toggle" for="advantages-input-3"></label>
@@ -150,13 +114,27 @@
 	</section>
 	<section class="reviews">
 		<h1 class="visually-hidden">Отзывы Барбершопа</h1>
-		<div class="reviews__wrapper slaider">
+		<div class="reviews__wrapper  slider">
 			<h2 class="reviews__title">Отзывы о нас</h2>
 			<a class="reviews__write  btn" href="#">Показать все</a>
-			<input class="slider__input" type="radio" id="reviews-input-1" name="reviews" checked>
-			<input class="slider__input" type="radio" id="reviews-input-2" name="reviews">
-			<input class="slider__input" type="radio" id="reviews-input-3" name="reviews">
-			<div class="reviews__list">
+			<input class="slider__input  slider__input--1" type="radio" id="reviews-input-1" name="reviews" checked>
+			<input class="slider__input  slider__input--2" type="radio" id="reviews-input-2" name="reviews">
+			<input class="slider__input  slider__input--3" type="radio" id="reviews-input-3" name="reviews">
+			<div class="reviews__list  slider__slide">
+				<blockquote class="reviews__item  slider__item">
+					<div class="reviews__author-foto">
+						<picture>
+							<source media="(min-width: 1200px)" srcset="img/author-foto@1x.jpg 1x
+							img/author-foto@2x.jpg 2x
+							img/author-foto@3x.jpg 3x">
+							<img src="img/author-foto-1x.jpg" alt="Фото автора" srcset="img/author-foto-2x.jpg 2x, img/author-foto-3x.jpg 3x">
+						</picture>
+					</div>
+					<div class="reviews__item-positioner">
+						<cite class="reviews__author">Тревис Баркер</cite>
+						<p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побрится, чтобы было видно новую татуировку!</p>
+					</div>
+				</blockquote>
 				<blockquote class="reviews__item  slider__item">
 					<div class="reviews__author-foto">
 						<img src="img/author-foto.jpg" alt="" width="50" height="49">
@@ -166,16 +144,7 @@
 						<p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побрится, чтобы было видно новую татуировку!</p>
 					</div>
 				</blockquote>
-				<blockquote class="reviews__item slider__item">
-					<div class="reviews__author-foto">
-						<img src="img/author-foto.jpg" alt="" width="50" height="49">
-					</div>
-					<div class="reviews__item-positioner">
-						<cite class="reviews__author">Тревис Баркер</cite>
-						<p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побрится, чтобы было видно новую татуировку!</p>
-					</div>
-				</blockquote>
-				<blockquote class="reviews__item slider__item">
+				<blockquote class="reviews__item  slider__item">
 					<div class="reviews__author-foto">
 						<img src="img/author-foto.jpg" alt="" width="50" height="49">
 					</div>
@@ -187,10 +156,10 @@
 				<button class="reviews__prev" type="button">Предыдущий отзыв</button>
 				<button class="reviews__next" type="button">Следующий отзыв</button>
 			</div>
-			<div class="reviews__toggle-list  slider__toggle-list">
-				<label class="slider__toggle  slider__toggle--active-black" for="reviews-input-1"></label>
-				<label class="slider__toggle" for="reviews-input-2"></label>
-				<label class="slider__toggle" for="reviews-input-3"></label>
+			<div class="slider__toggle-list">
+				<label class="slider__toggle  slider__toggle--black" for="reviews-input-1"></label>
+				<label class="slider__toggle  slider__toggle--black" for="reviews-input-2"></label>
+				<label class="slider__toggle  slider__toggle--black" for="reviews-input-3"></label>
 			</div>
 		</div>
 	</section>
@@ -199,18 +168,20 @@
 			<p class="page-footer__contacts">
 				<b class="page-footer__promo">Барбершоп &laquo;Бородинский&raquo;</b>
 				<span class="page-footer__adress">г. Санк-Петербург, ул. Большая Конюшенка 19/8</span>
-				<a class="page-footer__tel" href="tel:+78125556666"><span class="page-footer__contacts-hidden">Тел.:</span>+7 (812) 555-66-66</a>
+				<a class="page-footer__tel" href="tel:+78125556666"><span class="page-footer__contacts-hidden">Тел.:</span> +7 (812) 555-66-66</a>
+				<a class="page-footer__write" href="#">Напишите нам!</a>
 			</p>
 			<p class="page-footer__social">
+				Давайте дружить!
 				<span class="social-links">
-					<a class="social-links__item" href="#">Мы в Вконтакте</a>
-					<a class="social-links__item" href="#">Мы в Фейсбук</a>
-					<a class="social-links__item" href="#">Мы в Инстаграм</a>
+					<a class="social-links__item  social-links__item--vk" href="#">Мы в Вконтакте</a>
+					<a class="social-links__item  social-links__item--fb" href="#">Мы в Фейсбук</a>
+					<a class="social-links__item  social-links__item--ig" href="#">Мы в Инстаграм</a>
 				</span>
 			</p>
 			<p class="page-footer__copyright">
 				Разработано:
-				<a class="page-footer__copyright-link  btn" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
+				<a class="page-footer__copyright-link" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
 			</p>
 		</div>
 	</footer>

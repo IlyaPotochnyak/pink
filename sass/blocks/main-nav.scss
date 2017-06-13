@@ -98,6 +98,18 @@
 	color: rgb(255, 255, 255);
 	line-height: 24px;
 	text-decoration: none;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 18px;
+		left: 20px;
+		width: 16px;
+		height: 16px;
+		background: url(../img/sprite.png) no-repeat -46px -319px;
+	}
+	&:hover::before {
+		background: url(../img/sprite.png) no-repeat -0px -340px;
+	}
 }
 
 @media #{$mobile-width-only} {
@@ -180,31 +192,17 @@
 		flex-wrap: wrap;
 		flex-grow: 1;
 	}
-	.main-nav__user-list {
-		width: 60px;
-	}
-	.main-nav__list-item {
-		&--active {
-			position: relative;
-			&::after {
-				content: "";
-				position: absolute;
-				right: 0;
-				bottom: -3px;
-				left: 0;
-				height: 3px;
-				background-color: rgb(130, 101, 80);
-			}
-		}
-	}
-	.main-nav__list-item a {
+	.main-nav__list-item a,
+	.main-nav__user-login {
+		display: block;
 		padding: 0;
 		padding-top: 25px;
 		padding-bottom: 23px;
 		background: none;
 		box-shadow: none;
 	}
-	.main-nav__list-item a[href] {
+	.main-nav__list-item a[href],
+	.main-nav__user-login {
 		&:hover {
 			color: rgb(130, 101, 80);
 			background: none;
@@ -213,19 +211,32 @@
 			color: rgba(255, 255, 255, 0.3);
 		}
 	}
+	.main-nav__list-item a:not([href]) {
+		position: relative;
+		&::after {
+			content: "";
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			height: 3px;
+			background-color: rgb(130, 101, 80);
+		}
+	}
+	.main-nav__user-list {
+		width: 100px;
+	}
 	.main-nav__user-login {
-		width: 60px;
-		height: 70px;
-		padding: 0;
-		font-size: 0;
-		background: url(../img/login.png) no-repeat center;
-		background-size: 40px;
+		padding-left: 60px;
+		&::before {
+			top: 30px;
+			left: 30px;
+		}
 	}
 }
 
 @media #{$desktop-width} {
-	.main-nav__list {
-	}
+	.main-nav__list {}
 	.main-nav__list-item {
 		margin-right: 0;
 		&--active::after {

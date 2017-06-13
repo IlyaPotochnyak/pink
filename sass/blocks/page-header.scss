@@ -1,8 +1,10 @@
 .page-header__logo {
+	display: block;
 	height: 30px;
 	padding-top: 29px;
 	padding-bottom: 26px;
 	text-align: center;
+	background-color: rgb(36, 36, 36);
 }
 
 .page-header__logo img {
@@ -33,14 +35,20 @@
 			background: rgb(0, 0, 0) url("../img/header-bg@2x.jpg") no-repeat top;
 			background-size: 1200px auto;
 		}
+		img {
+			position: absolute;
+			top: 60px;
+			left: 50%;
+			width: 370px;
+			height: 101px;
+			transform: translateX(-50%);
+		}
 	}
-	.page-header__logo img {
-		position: absolute;
-		top: 60px;
-		left: 50%;
-		width: 370px;
-		height: 101px;
-		transform: translateX(-50%);
+	.photo .page-header__logo {
+		height: 200px;
+		img {
+			top: 30px;
+		}
 	}
 }
 
@@ -48,10 +56,16 @@
 	.page-header__logo {
 		height: 648px;
 		background-size: cover;
+		img {
+			top: 150px;
+			width: 370px;
+			height: 153px;
+		}
 	}
-	.page-header__logo img {
-		top: 150px;
-		width: 370px;
-		height: 153px;
+	.photo .page-header__logo {
+		height: 300px;
+		img {
+			top: 75px;
+		}
 	}
 }

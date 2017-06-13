@@ -4,6 +4,7 @@
 	font-weight: normal;
 	font-style: normal;
 	src: url("../fonts/ptsansnarrow_regular.woff") format("woff");
+	font-display: fallback;
 }
 
 @font-face {
@@ -11,6 +12,7 @@
 	font-weight: bold;
 	font-style: normal;
 	src: url("../fonts/ptsansnarrow_bold.woff") format("woff");
+	font-display: fallback;
 }
 
 body {
@@ -20,7 +22,6 @@ body {
 	font-family: "PT Sans Narrow", "Arial", sans-serif;
 	font-size: 16px;
 	font-style: normal;
-	background-color: $bg-darkgrey;
 }
 
 img {
